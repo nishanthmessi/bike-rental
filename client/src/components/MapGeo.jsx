@@ -1,19 +1,19 @@
-import Map from 'react-map-gl';
+import Map, { Marker } from 'react-map-gl';
 
 const MapGeo = ({ bikeDetails }) => {
-  const longitude = bikeDetails.longitude
-  const latitude = bikeDetails.latitude
+  const long = bikeDetails.longitude
+  const lati = bikeDetails.latitude
 
   return (
     <Map
       initialViewState={{
-        longitude: longitude,
-        latitude: latitude,
+        longitude: long,
+        latitude: lati,
         zoom: 14,
       }}
       style={{width: 1250, height: 480}}
       mapStyle = "mapbox://styles/nishanthmessi/clbf0tkny000j14oz0mtoc7no"
-      mapboxAccessToken = "pk.eyJ1IjoibmlzaGFudGhtZXNzaSIsImEiOiJjbGJmMGwxczEwMW1vM3VtdjhiZmhocmE5In0.OWZSZTq4B80XyrjONTgzNw"
+      mapboxAccessToken = {process.env.REACT_APP_MAP_TOKEN}
       >
         {/* <FullscreenControl />
         <ScaleControl /> */}
