@@ -12,6 +12,20 @@ const bikeSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  latitude: {
+    type: Number,
+    // required: true
+  },
+  longitude: {
+    type: Number,
+    // required: true
+  },
+  productionYear: {
+    type: Number,
+  },
+  drivenKms: {
+    type: Number
+  },
   bikecc: {
     type: String,
     required: true

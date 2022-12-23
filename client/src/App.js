@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import axios from 'axios'
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
-import BikeDetails from './components/BikeDetails';
+import BikeDetails from './pages/BikeDetails';
 
 import { BikeContext } from './Context/BikeContext'
 
