@@ -3,70 +3,70 @@ import React from 'react'
 const Footer = () => {
   return (
     
-    <footer class="container mx-auto  border-t-2">
-      <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+    <footer className="container mx-auto  border-t-2">
+      <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
         <div className='md:px-20'>
-          <h2 class="mb-6 text-lg font-bold text-gray-800 uppercase">Company</h2>
-          <ul class="text-gray-800 text-md md:text-lg">
-            <li class="mb-4">
-              <button class="hover:underline">About</button>
+          <h2 className="mb-6 text-lg font-bold text-gray-800 uppercase">Company</h2>
+          <ul className="text-gray-800 text-md md:text-lg">
+            <li className="mb-4">
+              <button className="hover:underline">About</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Careers</button>
+            <li className="mb-4">
+              <button className="hover:underline">Careers</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Brand Center</button>
+            <li className="mb-4">
+              <button className="hover:underline">Brand Center</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Blog</button>
+            <li className="mb-4">
+              <button className="hover:underline">Blog</button>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-lg font-bold text-gray-800 uppercase">Help center</h2>
-          <ul class="text-gray-800 text-md md:text-lg">
-            <li class="mb-4">
-              <button class="hover:underline">Discord Server</button>
+          <h2 className="mb-6 text-lg font-bold text-gray-800 uppercase">Help center</h2>
+          <ul className="text-gray-800 text-md md:text-lg">
+            <li className="mb-4">
+              <button className="hover:underline">Discord Server</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Twitter</button>
+            <li className="mb-4">
+              <button className="hover:underline">Twitter</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Facebook</button>
+            <li className="mb-4">
+              <button className="hover:underline">Facebook</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Contact Us</button>
+            <li className="mb-4">
+              <button className="hover:underline">Contact Us</button>
             </li>
           </ul>
         </div>
         <div className='md:px-20'>
-          <h2 class="mb-6 text-lg font-bold text-gray-800 uppercase">Legal</h2>
-          <ul class="text-gray-800 text-md md:text-lg">
-            <li class="mb-4">
-              <button class="hover:underline">Privacy Policy</button>
+          <h2 className="mb-6 text-lg font-bold text-gray-800 uppercase">Legal</h2>
+          <ul className="text-gray-800 text-md md:text-lg">
+            <li className="mb-4">
+              <button className="hover:underline">Privacy Policy</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Licensing</button>
+            <li className="mb-4">
+              <button className="hover:underline">Licensing</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Terms & Conditions</button>
+            <li className="mb-4">
+              <button className="hover:underline">Terms & Conditions</button>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-lg font-bold text-gray-800 uppercase">Download</h2>
-          <ul class="text-gray-800 text-md md:text-lg">
-            <li class="mb-4">
-              <button class="hover:underline">iOS</button>
+          <h2 className="mb-6 text-lg font-bold text-gray-800 uppercase">Download</h2>
+          <ul className="text-gray-800 text-md md:text-lg">
+            <li className="mb-4">
+              <button className="hover:underline">iOS</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Android</button>
+            <li className="mb-4">
+              <button className="hover:underline">Android</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">Windows</button>
+            <li className="mb-4">
+              <button className="hover:underline">Windows</button>
             </li>
-            <li class="mb-4">
-              <button class="hover:underline">MacOS</button>
+            <li className="mb-4">
+              <button className="hover:underline">MacOS</button>
             </li>
           </ul>
         </div>

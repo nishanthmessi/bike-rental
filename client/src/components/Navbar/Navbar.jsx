@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="relative container mx-auto p-4">
         <div className="flex items-center justify-between">
           <div>
-            <Link to='/' className='font-bold text-2xl underline' onClick={() => setNavMobile(false)}>Speed<span className='text-info'>up</span></Link>
+            <Link to='/' className='font-bold text-2xl underline' onClick={() => setNavMobile(false)}>Fasten</Link>
           </div>
 
           <div className="hidden space-x-10 md:flex font-bold">

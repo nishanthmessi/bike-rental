@@ -42,8 +42,8 @@ const BikeDetails = () => {
             <p className="text-xl font-semibold mt-5">Hosted by {bikeDetails.username}</p>
             <div className="py-6">
               <p className="text-xl mt-2 font-medium text-gray-600">Manufactured in <span className="font-bold text-gray-800">{bikeDetails.productionYear}</span></p>
-              <p className="text-xl font-bold mt-6 text-gray-600">Total CC: <span className="text-gray-800">{bikeDetails.bikecc}</span></p>
-              <p className="text-xl font-bold mt-6 text-gray-600">Total kilometer Driven: <span className="text-gray-800">{bikeDetails.drivenKms}kms</span></p>
+              <p className="text-xl font-medium mt-6 text-gray-600">Total CC: <span className="font-bold text-gray-800">{bikeDetails.bikecc}</span></p>
+              <p className="text-xl font-medium mt-6 text-gray-600">Total kilometer Driven: <span className="font-bold text-gray-800">{bikeDetails.drivenKms}kms</span></p>
               <p className="text-xl font-bold mt-6">₹{bikeDetails.price}<span className="font-normal">/day</span></p>
             </div>
 
