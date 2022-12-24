@@ -3,20 +3,23 @@ import { BikeContext } from "../Context/BikeContext"
 import axios from "axios"
 import Loading from '../components/Loading'
 import MapGeo from "../components/MapGeo"
+import Policy from "../components/Policy"
+import Footer from "../components/Footer"
 
 const BikeDetails = () => {
   const [bikeDetails, setBikeDetails] = useState()
+  const [hostName, setHostName] = useState()
+
   const { bikeid } = useContext(BikeContext)
 
   useEffect(() => {
     const getBike = async () => {
       const res = await axios.get(`/bike/${bikeid}`)
       setBikeDetails(res.data.data)
+      setHostName(res.data.data.username)
     }
     getBike()
-  }, [])
-
-  console.log(bikeDetails)
+  }, [bikeid])
 
   return (
     <div className='pt-24'>
@@ -36,9 +39,11 @@ const BikeDetails = () => {
             <p className="text-lg mt-4 font-medium text-gray-500">
               {bikeDetails.description}
             </p>
+            <p className="text-xl font-semibold mt-5">Hosted by {bikeDetails.username}</p>
             <div className="py-6">
-              <p className="text-xl mt-4 font-medium text-gray-600">Manufactured in <span className="font-bold text-gray-800">{bikeDetails.productionYear}</span></p>
+              <p className="text-xl mt-2 font-medium text-gray-600">Manufactured in <span className="font-bold text-gray-800">{bikeDetails.productionYear}</span></p>
               <p className="text-xl font-bold mt-6 text-gray-600">Total CC: <span className="text-gray-800">{bikeDetails.bikecc}</span></p>
+              <p className="text-xl font-bold mt-6 text-gray-600">Total kilometer Driven: <span className="text-gray-800">{bikeDetails.drivenKms}kms</span></p>
               <p className="text-xl font-bold mt-6">₹{bikeDetails.price}<span className="font-normal">/day</span></p>
             </div>
 
@@ -60,8 +65,11 @@ const BikeDetails = () => {
           </div>
           <p className="text-center text-lg font-medium py-4">Note: Exact location will be provided after booking</p>
         </div>
-      </div>       
-    }
+
+        <Policy hostname={hostName}/>
+        <Footer/>
+      </div>     
+    } 
     </div>
   )
 }
