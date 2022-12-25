@@ -20,13 +20,13 @@ const BikeCard = () => {
     <div>
       <div className='flex flex-wrap justify-center gap-8 py-12'>
         {bikesData.map((bike, i) => (
-          <Link to='/ride-details' key={i} className='cursor-pointer mb-6' onClick={() => setBikeid(bike._id) }>
+          <Link to='/ride-details' key={i} className='cursor-pointer mb-6 hover:scale-105 transition duration-300 ease-in-out' onClick={() => setBikeid(bike._id)}>
             <div className='h-96 w-96 md:h-[24rem] md:w-[22.5rem]'>
               <img src={bike.imageUrl} alt="bike-img" className='h-96 w-96 rounded-xl object-cover'/> 
             </div>
             <div className='flex justify-between items-center mt-3 text-xl'>
               <h3 className='font-bold'>{bike.bikename}</h3>
-              <p className="font-medium">{bike.bikecc}</p>
+              <p className="font-medium">{bike.bikecc}cc</p>
             </div>
             <p className='text-lg font-bold'>Rs.{bike.price}<span className='font-normal'>/day</span> </p>
           </Link>

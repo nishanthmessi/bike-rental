@@ -4,11 +4,12 @@ import axios from 'axios'
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
 import BikeDetails from './pages/BikeDetails';
+import Form from './pages/Form';
 
 import { BikeContext } from './Context/BikeContext'
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:5000/api/v1/'
+  axios.defaults.baseURL = 'http://localhost:5000/api/v1'
   axios.defaults.headers = {
     'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json'
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Hero/>}/>
           <Route path='/ride-details' element={<BikeDetails/>}/>
+          <Route path='/host-bike' element={<Form/>}/>
         </Routes>
       </BikeContext.Provider>
     </div>

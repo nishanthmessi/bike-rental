@@ -22,7 +22,7 @@ const BikeDetails = () => {
   }, [bikeid])
 
   return (
-    <div className='pt-24'>
+    <div className='pt-14 sm:pt-24'>
     {
       !bikeDetails ? <Loading /> : 
       <div className="container mx-auto"> 

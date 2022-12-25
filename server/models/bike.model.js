@@ -31,7 +31,7 @@ const bikeSchema = new mongoose.Schema({
     type: Number
   },
   bikecc: {
-    type: String,
+    type: Number,
     required: true
   },
   price: {
