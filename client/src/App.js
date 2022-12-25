@@ -9,7 +9,7 @@ import Form from './pages/Form';
 import { BikeContext } from './Context/BikeContext'
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:5000/api/v1'
+  axios.defaults.baseURL = 'https://bike-rental-yftg.onrender.com/api/v1'
   axios.defaults.headers = {
     'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json'
