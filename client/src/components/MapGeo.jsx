@@ -1,4 +1,5 @@
-import Map from 'react-map-gl';
+import Map from 'react-map-gl'
+import mapboxgl from '!mapbox-gl'
 
 const MapGeo = ({ bikeDetails }) => {
   const long = bikeDetails.longitude
