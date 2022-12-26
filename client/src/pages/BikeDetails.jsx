@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react"
 import { BikeContext } from "../Context/BikeContext"
 import axios from "axios"
 import Loading from '../components/Loading'
+import Spinner from "../components/Spinner"
 import MapGeo from "../components/MapGeo"
 import Policy from "../components/Policy"
 import Footer from "../components/Footer"
@@ -24,7 +25,11 @@ const BikeDetails = () => {
   return (
     <div className='pt-14 sm:pt-24'>
     {
-      !bikeDetails ? <Loading /> : 
+      !bikeDetails ? 
+      <div className="flex justify-center items-center h-screen">
+        <Spinner />
+      </div>   
+      : 
       <div className="container mx-auto"> 
         <div className="bg-white overflow-hidden relative lg:flex lg:items-center">
           <div className="flex items-center gap-8 p-8 lg:pl-20">
