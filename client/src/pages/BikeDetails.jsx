@@ -26,9 +26,7 @@ const BikeDetails = () => {
     <div className='pt-14 sm:pt-24'>
     {
       !bikeDetails ? 
-      <div className="flex justify-center items-center h-screen">
-        <Spinner />
-      </div>   
+        <Spinner />  
       : 
       <div className="container mx-auto"> 
         <div className="bg-white overflow-hidden relative lg:flex lg:items-center">
