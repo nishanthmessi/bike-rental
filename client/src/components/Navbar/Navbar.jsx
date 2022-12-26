@@ -9,7 +9,7 @@ const Navbar = () => {
   const [navMobile, setNavMobile] = useState(false);
 
   return (
-    <div className='w-full fixed z-50 bg-white'>
+    <div className='w-full sticky top-0 z-50 bg-white'>
         <nav className="relative container mx-auto p-4">
         <div className="flex items-center justify-between">
           <Link to='/' className='flex gap-3'>

@@ -23,10 +23,11 @@ const BikeDetails = () => {
   }, [bikeid])
 
   return (
-    <div className='pt-14 sm:pt-24'>
+    <div className='mt-2'>
     {
       !bikeDetails ? 
-        <Spinner />  
+        // <Spinner />
+        <div></div>
       : 
       <div className="container mx-auto"> 
         <div className="bg-white overflow-hidden relative lg:flex lg:items-center">
