@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react"
 import { Link } from 'react-router-dom'
 import axios from "axios"
 import { BikeContext } from "../Context/BikeContext"
+import Spinner from "./Spinner"
 import Footer from "./Footer"
 
 const BikeCard = () => {
@@ -16,6 +17,7 @@ const BikeCard = () => {
     getBikes()
   }, [])
 
+  if(bikesData) {
   return (
     <div>
       <div className='flex flex-wrap justify-center gap-8 py-12'>
@@ -35,6 +37,9 @@ const BikeCard = () => {
       <Footer />
     </div>
   )
+} else {
+    return <Spinner />
+  }
 }
 
 export default BikeCard
