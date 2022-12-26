@@ -51,7 +51,7 @@ const Form = () => {
 
   return (
     <div>
-      <div className='flex flex-col justify-center items-center pt-24 pb-6'>
+      <div className='flex flex-col justify-center items-center pt-6 pb-6'>
       <h1 className="text-2xl font-medium mb-14 ">Host your ride</h1>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col sm:flex-row gap-12">
